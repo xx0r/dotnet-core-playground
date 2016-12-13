@@ -1,5 +1,5 @@
---temp-output:X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\obj\Debug\netstandard1.6\
---out:X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\bin\Debug\netstandard1.6\Playground.ExpressionTree.dll
+--temp-output:x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\obj\Debug\netstandard1.6\
+--out:x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\bin\Debug\netstandard1.6\Playground.ExpressionTree.dll
 --define:DEBUG
 --define:TRACE
 --define:NETSTANDARD1_6
@@ -55,7 +55,7 @@
 --reference:C:\Users\korny\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\korny\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\korny\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
-X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\DataTransferObject.cs
-X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\GenericTypeInference.cs
-X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\Parser.cs
-X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\Properties\AssemblyInfo.cs
+x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\DataTransferObject.cs
+x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\GenericTypeInference.cs
+x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\Parser.cs
+x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\Properties\AssemblyInfo.cs

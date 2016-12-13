@@ -1,5 +1,5 @@
---temp-output:X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\obj\Debug\netcoreapp1.0\
---out:X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\bin\Debug\netcoreapp1.0\PlaygroundConsole.dll
+--temp-output:x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\obj\Debug\netcoreapp1.0\
+--out:x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\bin\Debug\netcoreapp1.0\PlaygroundConsole.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -86,6 +86,6 @@
 --reference:C:\Users\korny\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\korny\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\korny\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
---reference:X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\bin\Debug\netstandard1.6\Playground.ExpressionTree.dll
-X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Program.cs
-X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Properties\AssemblyInfo.cs
+--reference:x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\bin\Debug\netstandard1.6\Playground.ExpressionTree.dll
+x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Program.cs
+x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Properties\AssemblyInfo.cs

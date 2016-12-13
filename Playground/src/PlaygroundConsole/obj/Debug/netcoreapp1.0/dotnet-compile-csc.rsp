@@ -7,8 +7,8 @@
 -debug:full
 -nostdlib
 -nologo
-"X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
--out:"X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\bin\Debug\netcoreapp1.0\PlaygroundConsole.dll"
+"x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\obj\Debug\netcoreapp1.0\dotnet-compile.assemblyinfo.cs"
+-out:"x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\bin\Debug\netcoreapp1.0\PlaygroundConsole.dll"
 -r:"C:\Users\korny\.nuget\packages\Microsoft.CSharp\4.0.1\ref\netstandard1.0\Microsoft.CSharp.dll"
 -r:"C:\Users\korny\.nuget\packages\Microsoft.VisualBasic\10.0.1\ref\netstandard1.1\Microsoft.VisualBasic.dll"
 -r:"C:\Users\korny\.nuget\packages\Microsoft.Win32.Primitives\4.0.1\ref\netstandard1.3\Microsoft.Win32.Primitives.dll"
@@ -82,6 +82,6 @@
 -r:"C:\Users\korny\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll"
 -r:"C:\Users\korny\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\korny\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
--r:"X:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\bin\Debug\netstandard1.6\Playground.ExpressionTree.dll"
-"X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Program.cs"
-"X:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Properties\AssemblyInfo.cs"
+-r:"x:\Git\dotnet-core-playground\Playground\src\Playground.ExpressionTree\bin\Debug\netstandard1.6\Playground.ExpressionTree.dll"
+"x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Program.cs"
+"x:\Git\dotnet-core-playground\Playground\src\PlaygroundConsole\Properties\AssemblyInfo.cs"
