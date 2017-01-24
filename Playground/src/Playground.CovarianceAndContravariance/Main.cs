@@ -14,6 +14,15 @@ namespace Playground.CovarianceAndContravariance
             list.List = new List<Feature>();
 
             return list;
+
+        }
+
+        public void TestGeneric()
+        {
+            var instance = new Generic<Base, Base>();
+
+            Base b;
+            b = instance.Test(new Derived());
         }
 
     }
