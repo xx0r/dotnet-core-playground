@@ -8,7 +8,12 @@
     {
         public static void Main(string[] args)
         {
-            var allTypes = Assembly.GetEntryAssembly().GetTypes(); //.GetInterfaces();
+            // Assembly can be loaded dynamically
+            var assembly = Assembly.Load(new AssemblyName("Playground.Reflection")) ?? Assembly.GetEntryAssembly();
+
+            Console.WriteLine(assembly.FullName);
+
+            var allTypes = assembly.GetTypes(); //.GetInterfaces();
             var interfaces = allTypes.SelectMany(t => t.GetInterfaces());
             var types = allTypes.Except(interfaces);
 
