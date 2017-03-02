@@ -15,7 +15,7 @@
 
             var allTypes = assembly.GetTypes().ToList(); 
             var interfaces = allTypes.SelectMany(t => t.GetInterfaces()).ToList();
-            var types = allTypes.Except(interfaces);
+            var types = allTypes.Except(interfaces).ToList();
 
             Console.WriteLine("IDependency implementations");
 
