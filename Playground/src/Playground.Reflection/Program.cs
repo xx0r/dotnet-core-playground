@@ -9,11 +9,12 @@
         public static void Main(string[] args)
         {
             // Assembly can be loaded dynamically
-            var assembly = Assembly.Load(new AssemblyName(typeof(IDependency).AssemblyQualifiedName ?? "Playground.Reflection")) ?? Assembly.GetEntryAssembly();
+            var assembly = Assembly.Load(new AssemblyName("Playground.Reflection")) ?? Assembly.GetEntryAssembly(); // typeof(IDependency).FullName ?? 
+            var referencedAssemblies = assembly.GetReferencedAssemblies().Select(Assembly.Load);
 
             Console.WriteLine(assembly.FullName);
 
-            var allTypes = assembly.GetTypes().ToList(); 
+            var allTypes = referencedAssemblies.Concat(new[] { assembly }).SelectMany(a => a.GetTypes()).ToList();
             var interfaces = allTypes.SelectMany(t => t.GetInterfaces()).ToList();
             var types = allTypes.Except(interfaces).ToList();
 
