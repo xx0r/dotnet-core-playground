@@ -14,19 +14,28 @@
 
             Console.WriteLine(assembly.FullName);
 
-            var allTypes = referencedAssemblies.Concat(new[] { assembly }).SelectMany(a => a.GetTypes()).ToList();
-            var interfaces = allTypes.SelectMany(t => t.GetInterfaces()).ToList();
-            var types = allTypes.Except(interfaces).ToList();
+            var dependencyTypes = referencedAssemblies.Concat(new[] { assembly })
+                                                        .SelectMany(a => a.GetExportedTypes())
+                                                        .Where(t => typeof(IDependency).IsAssignableFrom(t) && t != typeof(IDependency))
+                                                        .ToList();
+
+            var dependencyInterfaces = dependencyTypes.SelectMany(t => t.GetInterfaces())
+                                                       .Where(t => t != typeof(IDependency))
+                                                       .ToArray();
+
+            // Note, System.Type.IsInterface is implemented int .NET Core
+            // https://apisof.net/catalog/System.Type.IsInterface
+            var dependencyImplementations = dependencyTypes.Except(dependencyInterfaces).ToArray();
 
             Console.WriteLine("IDependency implementations");
 
-            foreach (var @interface in interfaces.Where(i => typeof(IDependency).IsAssignableFrom(i) && i.Name != typeof(IDependency).Name))
+            foreach (var @interface in dependencyInterfaces)
             {
-                var type = types.SingleOrDefault(t => @interface.IsAssignableFrom(t));
+                var type = dependencyImplementations.SingleOrDefault(t => @interface.IsAssignableFrom(t));
 
                 Console.WriteLine($"{type.Name} : {@interface.Name}");
             }
-            
+
             Console.ReadKey();
         }
     }
