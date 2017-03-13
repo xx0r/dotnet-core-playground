@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Playground.ExpressionTree;
 
-namespace Playground
+namespace Playground.ExpressionTree
 {
     public class Program
     {

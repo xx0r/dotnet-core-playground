@@ -1,26 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D886C967-F798-4BB6-97A2-328FBC9A5A35}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9A4340D4-6C4F-47A9-836C-2DEB37BAD718}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "PlaygroundConsole", "src\PlaygroundConsole\PlaygroundConsole.xproj", "{2335E087-7599-4CA0-AE3A-7B2C8A184D8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.ExpressionTree", "src\PlaygroundConsole\Playground.ExpressionTree.csproj", "{2335E087-7599-4CA0-AE3A-7B2C8A184D8E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Playground.ExpressionTree", "src\Playground.ExpressionTree\Playground.ExpressionTree.xproj", "{4CB3CA19-CE7A-4DC4-8948-38BCD096D89D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.CovarianceAndContravariance", "src\Playground.CovarianceAndContravariance\Playground.CovarianceAndContravariance.csproj", "{C535DD4A-8278-452F-9B87-97B7025DD223}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Playground.CovarianceAndContravariance", "src\Playground.CovarianceAndContravariance\Playground.CovarianceAndContravariance.xproj", "{C535DD4A-8278-452F-9B87-97B7025DD223}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.CSharpFeatures", "src\Playground.CSharpFeatures\Playground.CSharpFeatures.csproj", "{626BF0D2-48A3-4CA1-8A89-769782FC8CDA}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Playground.CSharpFeatures", "src\Playground.CSharpFeatures\Playground.CSharpFeatures.xproj", "{626BF0D2-48A3-4CA1-8A89-769782FC8CDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.ConstructorExecutionOrder", "src\ConstructorExecutionOrder\Playground.ConstructorExecutionOrder.csproj", "{580158F6-2DC7-48D1-AE88-1CAD317065E9}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Playground.ConstructorExecutionOrder", "src\ConstructorExecutionOrder\Playground.ConstructorExecutionOrder.xproj", "{580158F6-2DC7-48D1-AE88-1CAD317065E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Playground.Reflection", "src\Playground.Reflection\Playground.Reflection.csproj", "{9AACC6AD-4A76-4A41-BDE2-0D779838A75E}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Playground.Reflection", "src\Playground.Reflection\Playground.Reflection.xproj", "{9AACC6AD-4A76-4A41-BDE2-0D779838A75E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{97C52BEE-B03E-4039-881E-FAA17A1D584D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,10 +29,6 @@ Global
 		{2335E087-7599-4CA0-AE3A-7B2C8A184D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2335E087-7599-4CA0-AE3A-7B2C8A184D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2335E087-7599-4CA0-AE3A-7B2C8A184D8E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CB3CA19-CE7A-4DC4-8948-38BCD096D89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CB3CA19-CE7A-4DC4-8948-38BCD096D89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CB3CA19-CE7A-4DC4-8948-38BCD096D89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CB3CA19-CE7A-4DC4-8948-38BCD096D89D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C535DD4A-8278-452F-9B87-97B7025DD223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C535DD4A-8278-452F-9B87-97B7025DD223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C535DD4A-8278-452F-9B87-97B7025DD223}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,16 +45,20 @@ Global
 		{9AACC6AD-4A76-4A41-BDE2-0D779838A75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AACC6AD-4A76-4A41-BDE2-0D779838A75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AACC6AD-4A76-4A41-BDE2-0D779838A75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C52BEE-B03E-4039-881E-FAA17A1D584D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C52BEE-B03E-4039-881E-FAA17A1D584D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C52BEE-B03E-4039-881E-FAA17A1D584D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C52BEE-B03E-4039-881E-FAA17A1D584D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2335E087-7599-4CA0-AE3A-7B2C8A184D8E} = {D886C967-F798-4BB6-97A2-328FBC9A5A35}
-		{4CB3CA19-CE7A-4DC4-8948-38BCD096D89D} = {D886C967-F798-4BB6-97A2-328FBC9A5A35}
 		{C535DD4A-8278-452F-9B87-97B7025DD223} = {D886C967-F798-4BB6-97A2-328FBC9A5A35}
 		{626BF0D2-48A3-4CA1-8A89-769782FC8CDA} = {D886C967-F798-4BB6-97A2-328FBC9A5A35}
 		{580158F6-2DC7-48D1-AE88-1CAD317065E9} = {D886C967-F798-4BB6-97A2-328FBC9A5A35}
 		{9AACC6AD-4A76-4A41-BDE2-0D779838A75E} = {D886C967-F798-4BB6-97A2-328FBC9A5A35}
+		{97C52BEE-B03E-4039-881E-FAA17A1D584D} = {D886C967-F798-4BB6-97A2-328FBC9A5A35}
 	EndGlobalSection
 EndGlobal
